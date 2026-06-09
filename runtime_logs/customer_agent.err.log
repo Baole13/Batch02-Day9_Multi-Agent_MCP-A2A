@@ -1,0 +1,16 @@
+2026-06-09 15:15:56,682 [customer_agent] INFO HTTP Request: POST http://localhost:10000/register "HTTP/1.1 200 OK"
+2026-06-09 15:15:56,682 [customer_agent] INFO Registered with registry (attempt 1)
+2026-06-09 15:15:56,689 [customer_agent] INFO Customer Agent listening on port 10100
+INFO:     Started server process [36328]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:10100 (Press CTRL+C to quit)
+2026-06-09 15:16:16,048 [customer_agent] WARNING Deprecated agent card endpoint '/.well-known/agent.json' accessed. Please use '/.well-known/agent-card.json' instead. This endpoint will be removed in a future version.
+2026-06-09 15:16:16,685 [customer_agent] INFO CustomerAgent executing | task=e5111ecc-53a4-48b3-9a6c-78379eedc5fd context=6138250e-958d-48d0-9947-ca6af5fa62d7 trace=808e633c-6353-48e1-81e9-2c3a3784f563 depth=0
+2026-06-09 15:16:18,823 [customer_agent] INFO Task not found or task_id not set. Creating new task for event (task_id: e5111ecc-53a4-48b3-9a6c-78379eedc5fd, context_id: 6138250e-958d-48d0-9947-ca6af5fa62d7).
+2026-06-09 15:16:20,443 [customer_agent] INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-09 15:16:20,897 [customer_agent] INFO Customer delegate_to_legal_agent | trace=808e633c-6353-48e1-81e9-2c3a3784f563 context=6138250e-958d-48d0-9947-ca6af5fa62d7 depth=0
+2026-06-09 15:16:21,696 [customer_agent] INFO HTTP Request: GET http://localhost:10000/discover/legal_question "HTTP/1.1 200 OK"
+2026-06-09 15:16:22,514 [customer_agent] INFO HTTP Request: GET http://localhost:10101/.well-known/agent.json "HTTP/1.1 200 OK"
+2026-06-09 15:16:38,706 [customer_agent] INFO HTTP Request: POST http://localhost:10101 "HTTP/1.1 200 OK"
+2026-06-09 15:16:39,539 [customer_agent] INFO HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"

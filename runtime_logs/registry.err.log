@@ -1,0 +1,12 @@
+2026-06-09 15:15:42,073 [registry] INFO Starting Registry on port 10000
+INFO:     Started server process [20736]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:10000 (Press CTRL+C to quit)
+2026-06-09 15:15:48,910 [registry] INFO Registered agent 'tax-agent' at http://localhost:10102 (tasks=['tax_question'])
+2026-06-09 15:15:50,389 [registry] INFO Registered agent 'compliance-agent' at http://localhost:10103 (tasks=['compliance_question'])
+2026-06-09 15:15:53,598 [registry] INFO Registered agent 'law-agent' at http://localhost:10101 (tasks=['legal_question'])
+2026-06-09 15:15:56,672 [registry] INFO Registered agent 'customer-agent' at http://localhost:10100 (tasks=[])
+2026-06-09 15:16:21,693 [registry] INFO Discovered agent 'law-agent' for task 'legal_question'
+2026-06-09 15:16:29,401 [registry] INFO Discovered agent 'compliance-agent' for task 'compliance_question'
+2026-06-09 15:16:29,405 [registry] INFO Discovered agent 'tax-agent' for task 'tax_question'
